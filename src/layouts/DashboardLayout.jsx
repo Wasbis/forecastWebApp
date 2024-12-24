@@ -5,8 +5,8 @@ import Navbar from "../components/Navbar";
 const DashboardLayout = ({ children }) => {
     return (
         <div className="h-screen overflow-hidden">
-            <Navbar />
-            <div className="content">
+            {/* <Navbar /> */}
+            <div className="conten ">
                 <main>{children}</main>
             </div>
         </div>

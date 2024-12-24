@@ -9,7 +9,7 @@ const ContainerPage = ({ title, subtitle, children, className = "", backgroundCo
                     {subtitle && <p className="mt-2 text-gray-600 dark:text-gray-300">{subtitle}</p>}
                 </div>
             )}
-            <div className="container mx-auto max-w-[1440px] flex gap-6 h-full">{children}</div>
+            <div className="container mx-auto flex gap-6 h-full ">{children}</div>
         </div>
     );
 };
