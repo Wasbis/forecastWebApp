@@ -1,11 +1,11 @@
 import React from "react";
+import RainfallAnimation from "../../components/RainfallAnimation";
 
 export default function Rainfall({ rainfallValue }) {
     return (
         <div className="grid justify-start items-center relative font-semibold text-white">
             <div className="flex justify-center gap-3 text-5xl">
-                <h1>{rainfallValue}</h1>
-                <span className="font-normal text-2xl">{"\u00b0"}C</span>
+                <RainfallAnimation rainfallValue={rainfallValue} />
             </div>
         </div>
     );

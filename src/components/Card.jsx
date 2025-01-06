@@ -11,7 +11,7 @@ const Card = ({ title, description, imageUrl, link, footer, className, children 
             </div>
 
             <div className="relative z-10 h-full  items-center  ">
-                <h1 className="h-1/6">{title && <h2 className="text-xl font-semibold text-gray-800 dark:text-white">{title}</h2>}</h1>
+                <h1 className="h-1/6 p-2 text-center">{title && <h2 className="text-xl font-semibold text-gray-800 dark:text-white">{title}</h2>}</h1>
 
                 <div className="h-5/6">{children}</div>
             </div>

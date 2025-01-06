@@ -47,9 +47,6 @@ const AnimatedCircle = ({ temperature = 0, minTemp = -20, maxTemp = 50, size = 3
                     {temperature}
                     {"\u00b0"}C
                 </div>
-                <div className="font-normal text-white" style={{ fontSize: `${size / 13}px` }}>
-                    Progress
-                </div>
             </div>
         </div>
     );
