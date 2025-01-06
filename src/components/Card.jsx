@@ -10,7 +10,7 @@ const Card = ({ title, description, imageUrl, link, footer, className, children 
                 <div className="h-full w-full scale-98 bg-white blur-sm  dark:bg-gray-800 rounded-lg"></div>
             </div>
 
-            <div className="relative z-10 p-4">
+            <div className="relative z-10  ">
                 {imageUrl && <img className="w-full h-48 object-cover rounded-t-lg" src={imageUrl} alt={title} />}
                 {title && <h2 className="text-xl font-semibold text-gray-800 dark:text-white">{title}</h2>}
                 {description && <p className="mt-2 text-gray-600 dark:text-gray-300">{description}</p>}
