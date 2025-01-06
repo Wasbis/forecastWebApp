@@ -98,9 +98,10 @@ export default function Index() {
                             <Barometer barometerValue={barometer} />
                         </div>
                     </Card>
-                    <Card title={"Altimeter"}>
-                        <div className="p-5 w-full ">
-                            <Altimeter altimeterValue={altimeter} />
+                    <Card title={"Wind"}>
+                        <div className="p-3 w-full h-full">
+                            {/* <Altimeter altimeterValue={altimeter} /> */}
+                            <Wind windSpeedValue={windSpeed} windDirectionValue={windDirection} />
                         </div>
                     </Card>
                 </div>
@@ -119,11 +120,15 @@ export default function Index() {
             </div>
             <div className="w-[20%] space-y-6 my-10 ">
                 <div className="flex space-x-3 h-[20%] ">
-                    <Card className={"  text-white font-semibold text-xl text-center grid justify-center items-center h-full  w-1/2"}>
-                        <div className="h-full space-y-2">
+                    <Card
+                        className={"  text-white font-semibold text-xl text-center grid justify-center items-center h-full  w-1/2"}
+                        title={
                             <div className="text-[0.6rem]  uppercase">
                                 Station <span className="text-orange-600">(Time UTC)</span>
                             </div>
+                        }
+                    >
+                        <div className="h-full space-y-2">
                             <div className="text-4xl font-normal">19:20</div>
                             <div className="flex text-sm justify-center gap-1">
                                 <div>22</div>
@@ -131,11 +136,15 @@ export default function Index() {
                             </div>
                         </div>
                     </Card>
-                    <Card className={"text-white font-semibold text-xl text-center grid justify-center items-center h-full  w-1/2"}>
-                        <div className="h-full space-y-2">
+                    <Card
+                        className={"text-white font-semibold text-xl text-center grid justify-center items-center h-full  w-1/2"}
+                        title={
                             <div className="text-[0.6rem]  uppercase">
-                                Station <span className="text-orange-600">(Time WITA)</span>
+                                Station <span className="text-orange-600">(Time UTC)</span>
                             </div>
+                        }
+                    >
+                        <div className="h-full space-y-2">
                             <div className="text-4xl font-normal">19:20</div>
                             <div className="flex text-sm justify-center gap-1">
                                 <div>22</div>
@@ -144,9 +153,11 @@ export default function Index() {
                         </div>
                     </Card>
                 </div>
-                <div className="flex space-x-3 h-[40%] ">
-                    <Card title={"windspeed"} className={"p-5 w-full"}>
-                        <Wind windSpeedValue={windSpeed} windDirectionValue={windDirection} />
+                <div className="flex  h-[40%] ">
+                    <Card title={"windspeed"} className={"p-5 w-full h-full "}>
+                        <Altimeter altimeterValue={altimeter} />
+
+                        {/* <Wind windSpeedValue={windSpeed} windDirectionValue={windDirection} /> */}
                     </Card>
                 </div>
                 <div className="flex space-x-3 h-[33%] ">

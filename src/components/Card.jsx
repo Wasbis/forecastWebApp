@@ -10,20 +10,10 @@ const Card = ({ title, description, imageUrl, link, footer, className, children 
                 <div className="h-full w-full scale-98 bg-white blur-sm  dark:bg-gray-800 rounded-lg"></div>
             </div>
 
-            <div className="relative z-10  ">
-                {imageUrl && <img className="w-full h-48 object-cover rounded-t-lg" src={imageUrl} alt={title} />}
-                {title && <h2 className="text-xl font-semibold text-gray-800 dark:text-white">{title}</h2>}
-                {description && <p className="mt-2 text-gray-600 dark:text-gray-300">{description}</p>}
-                {children}
-                {footer && <div className="mt-4 p-4 bg-gray-100 dark:bg-gray-700 rounded-b-lg">{footer}</div>}
-                {link && (
-                    <a
-                        href={link}
-                        className="block mt-4 py-2 text-center bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all"
-                    >
-                        Learn More
-                    </a>
-                )}
+            <div className="relative z-10 h-full  items-center  ">
+                <h1 className="h-1/6">{title && <h2 className="text-xl font-semibold text-gray-800 dark:text-white">{title}</h2>}</h1>
+
+                <div className="h-5/6">{children}</div>
             </div>
         </div>
     );
