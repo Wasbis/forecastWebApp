@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-// import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/Sidebar";
 
 const DashboardLayout = ({ children }) => {
     return (
-        <div className="h-screen overflow-hidden">
-            {/* <Navbar /> */}
+        <div className="h-screen relative w-full">
+            <div className="absolute z-10 -left-10">
+                <Sidebar />
+            </div>
             <div className="conten ">
                 <main>{children}</main>
             </div>

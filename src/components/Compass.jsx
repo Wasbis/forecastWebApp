@@ -53,7 +53,7 @@ export default function Compass({ heading = 0, showLabels = true }) {
             {/* Center text */}
             <div className="absolute inset-0 flex flex-col items-center justify-center">
                 {getCardinalDirection(displayHeading)}
-                <motion.span
+                {/* <motion.span
                     className="text-sm text-gray-400"
                     key={`degree-${displayHeading}`}
                     initial={{ opacity: 0, y: 10 }}
@@ -61,7 +61,7 @@ export default function Compass({ heading = 0, showLabels = true }) {
                     transition={{ duration: 0.3 }}
                 >
                     {`${displayHeading.toFixed(0)}°`}
-                </motion.span>
+                </motion.span> */}
             </div>
         </div>
     );

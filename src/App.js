@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-// import Settings from "./pages/Settings";
+import Settings from "./pages/Settings";
 // import NotFound from "./pages/NotFound";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./routes/ProtectedRoutes";
@@ -27,7 +27,7 @@ const AppRoutes = () => {
                     </ProtectedRoute>
                 }
             />
-            {/* <Route
+            <Route
                 path="/settings"
                 element={
                     <ProtectedRoute isAuthenticated={isAuthenticated}>
@@ -36,7 +36,7 @@ const AppRoutes = () => {
                         </DashboardLayout>
                     </ProtectedRoute>
                 }
-            /> */}
+            />
 
             {/* Rute 404 */}
             <Route path="*" element={<NotFound />} />

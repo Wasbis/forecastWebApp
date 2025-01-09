@@ -25,7 +25,7 @@ export default function RainfallAnimation({ rainfallValue }) {
     const waveIntensity = Math.min(1, rainfallValue / 40); // Normalize to 0-1 range
 
     return (
-        <div className="relative w-48 h-48 bg-white rounded-full shadow-lg overflow-hidden">
+        <div className="relative w-40 h-40 bg-white rounded-full shadow-lg overflow-hidden">
             {/* Blue circular border */}
             <div className="absolute inset-0 rounded-full border-[16px] border-blue-500/20" />
 

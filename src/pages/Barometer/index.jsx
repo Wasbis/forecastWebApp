@@ -11,7 +11,7 @@ export default function Barometer({ barometerValue }) {
     };
 
     return (
-        <div className="relative w-40 h-40">
+        <div className="relative w-[9rem] h-[9rem]">
             {/* Background circle */}
             <div className="absolute inset-0 rounded-full bg-white shadow-lg" />
 
